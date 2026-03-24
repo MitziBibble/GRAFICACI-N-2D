@@ -4,6 +4,7 @@
 ## 2.1. Transformación Bidimensional
 
 Las transformaciones bidimensionales son operaciones geométricas que permiten crear una nueva figura a partir de una previamente dada. Se utilizan para alterar orientación, tamaño y forma de objetos en el plano. Las transformaciones básicas son: traslación, escalamiento, rotación y sesgado.
+
 <img width="712" height="709" alt="cambios" src="https://github.com/user-attachments/assets/ff22fac2-6e10-4168-aa34-8f0f5272294e" />
 
 ---
@@ -113,6 +114,8 @@ Las curvas paramétricas se describen mediante ecuaciones que dependen de un par
 
 Las curvas de Bézier fueron desarrolladas por *Pierre Bézier* en los años 60, originalmente para el diseño de carrocerías de automóviles Renault. Se definen mediante *puntos de control* y polinomios de Bernstein.
 
+<img width="711" height="317" alt="curva" src="https://github.com/user-attachments/assets/ffffe73e-29a5-42f3-9477-fbbfb81526d7" />
+
 *Propiedades principales:*
 - La curva *comienza en P₀ y termina en Pₙ* (interpolación de puntos extremos).
 - El control es *global*: mover un punto de control modifica toda la curva.
@@ -135,6 +138,8 @@ Las curvas de Bézier fueron desarrolladas por *Pierre Bézier* en los años 60,
 4. El punto final al variar t de 0 a 1 traza la curva.
 
 > Se usa ampliamente en: Adobe Illustrator, Inkscape, Photoshop, CSS animations, PostScript.
+
+<img width="719" height="360" alt="cubico" src="https://github.com/user-attachments/assets/837d8cfa-0f4c-4791-874a-e7daeea76eba" />
 
 ---
 
