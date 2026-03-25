@@ -1,4 +1,4 @@
-<img width="717" height="748" alt="spline" src="https://github.com/user-attachments/assets/2b439ef5-6c80-43aa-9538-3b4977db20d0" /># GRAFICACI-N-2D
+<img width="1855" height="1308" alt="frame 2" src="https://github.com/user-attachments/assets/f2879122-a668-4284-8ffc-ab95339dece4" /><img width="717" height="748" alt="spline" src="https://github.com/user-attachments/assets/2b439ef5-6c80-43aa-9538-3b4977db20d0" /># GRAFICACI-N-2D
 # Unidad 2: Graficación por Computadora
 
 ## 2.1. Transformación Bidimensional
@@ -319,6 +319,8 @@ plt.show()
 2. En la pantalla de inicio (Splash Screen), selecciona *2D Animation*.
    - Esto crea automáticamente una escena optimizada para Grease Pencil.
    - Verás un lienzo blanco en lugar del típico cubo 3D.
+     
+<img width="765" height="476" alt="menu blender" src="https://github.com/user-attachments/assets/8e3c5a65-dcc0-4e95-a013-3802c578bec0" />
 
 >  Si ya tenías Blender abierto: *File → New → 2D Animation*.
 
@@ -405,6 +407,8 @@ La caminata se anima dibujando *poses clave* en fotogramas distintos. Blender NO
 1. Ve al *Frame 1* en la Timeline.
 2. Selecciona la capa Pierna_Der.
 3. Dibuja la primera imagen de referencia de Pochita.
+   
+<img width="1847" height="1302" alt="frame 1" src="https://github.com/user-attachments/assets/fc59b106-e536-4069-99d0-e402cf850624" />
 
 *Guardar el keyframe de dibujo:*
 1. En la Timeline, presiona I estando sobre el área de Grease Pencil.
@@ -417,18 +421,26 @@ Repite el mismo proceso para cada pose:
 *Frame 4*
 - Dibuja la pose 2.
 - Presiona I → *All Layers*.
+  
+<img width="1855" height="1308" alt="frame 2" src="https://github.com/user-attachments/assets/8b7be5c6-3ff2-49b0-9cc0-393b1e376715" />
 
 *Frame 7*
 - Dibuja la pose 3.
 - Presiona I → *All Layers*.
+  
+<img width="1931" height="1274" alt="frame 3" src="https://github.com/user-attachments/assets/64cd89ac-2633-42f4-9c16-4918dd78ec12" />
 
 *Frame 10*
 - Dibuja la pose 4.
 - Presiona I → *All Layers*.
+  
+<img width="1892" height="1139" alt="frame 4" src="https://github.com/user-attachments/assets/39755eca-2319-4ac9-8acf-9c56013f3baa" />
 
 *Frame 13*
 - Dibuja la pose 5.
 - Presiona I → *All Layers*.
+  
+<img width="1917" height="1216" alt="frame 5" src="https://github.com/user-attachments/assets/23671a4d-90ef-43c9-89ff-0845c28d6fd3" />
 
 *Frames 6, 7, 8:*
 - Repite el mismo patrón espejado de los frames 4, 7 y 10.
@@ -500,7 +512,7 @@ Ahora el personaje caminará de izquierda a derecha mientras el ciclo de caminat
 
 ---
 
-## ❗ Errores comunes
+##  Errores comunes
 
 | Error | Causa | Solución |
 |---|---|---|
@@ -513,7 +525,7 @@ Ahora el personaje caminará de izquierda a derecha mientras el ciclo de caminat
 
 ---
 
-## 🎓 Glosario
+##  Glosario
 
 | Término | Significado |
 |---|---|
@@ -527,7 +539,7 @@ Ahora el personaje caminará de izquierda a derecha mientras el ciclo de caminat
 
 ---
 
-## 📚 Recursos adicionales
+##  Recursos adicionales
 
 - Documentación Grease Pencil: https://docs.blender.org/manual/en/latest/grease_pencil/
 - Comunidad Blender: https://www.reddit.com/r/blender/
