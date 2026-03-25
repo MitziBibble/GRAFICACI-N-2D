@@ -1,4 +1,4 @@
-# GRAFICACI-N-2D
+<img width="717" height="748" alt="spline" src="https://github.com/user-attachments/assets/2b439ef5-6c80-43aa-9538-3b4977db20d0" /># GRAFICACI-N-2D
 # Unidad 2: Graficación por Computadora
 
 ## 2.1. Transformación Bidimensional
@@ -152,6 +152,8 @@ Las B-Splines (Basis Splines) son una *generalización de las curvas de Bézier,
 - k: orden de la B-Spline (k = grado + 1)
 - d: grado (usualmente d = 3 para cúbicas)
 - Ni,k: funciones B-Spline base
+  
+<img width="717" height="748" alt="spline" src="https://github.com/user-attachments/assets/e9b541b9-144d-43b4-9335-2fd380d9cd96" />
 
 *Ventajas sobre Bézier:*
 
@@ -173,6 +175,8 @@ El término *"fractal"* proviene del latín fractus (fragmentado, roto). Fue acu
 ### Definición
 
 Un fractal es un objeto geométrico cuya estructura básica, fragmentada o aparentemente irregular, *se repite a diferentes escalas* (autosimilitud). Su dimensión de Hausdorff-Besicovitch es estrictamente mayor que su dimensión topológica.
+
+<img width="713" height="538" alt="fractal" src="https://github.com/user-attachments/assets/14d930e5-e711-4b2e-8e4c-6f18c08d4b89" />
 
 ### Características principales
 
@@ -204,6 +208,8 @@ z_{n+1} = z_n² + c
 - Romanesco (brécol)
 - Copos de nieve
 - Relámpagos
+  
+<img width="711" height="528" alt="romanesco" src="https://github.com/user-attachments/assets/ff70a8a5-b664-401b-9d75-73bdca39fd6d" />
 
 ---
 
@@ -278,7 +284,7 @@ prop = fm.FontProperties(fname="mi_fuente.ttf")
 plt.title("Gráfica con fuente personalizada", fontproperties=prop)
 plt.show()
 ```
-# 🎨 Tutorial: Animación 2D en Blender con Grease Pencil
+# Tutorial: Animación 2D en Blender con Grease Pencil
 ### Personaje caminando paso a paso
 
 > Usa el modo 2D de Blender (Grease Pencil) para dibujar y animar un personaje caminando desde cero.
@@ -294,18 +300,14 @@ plt.show()
 5. [Crear las poses del ciclo de caminata](#4-crear-las-poses-del-ciclo-de-caminata)
 6. [Insertar keyframes de dibujo](#5-insertar-keyframes-de-dibujo)
 7. [Previsualizar el ciclo](#6-previsualizar-el-ciclo)
-8. [Agregar movimiento horizontal](#7-agregar-movimiento-horizontal)
-9. [Exportar la animación](#8-exportar-la-animación)
-10. [Errores comunes](#errores-comunes)
 
 ---
 
-## ✅ Requisitos previos
+## Requisitos previos
 
 - *Blender 3.0 o superior* instalado → https://www.blender.org/download/
 - Un mouse (opcional pero muy recomendado para dibujar)
 - Una tableta gráfica (no obligatoria, pero ayuda mucho al dibujar)
-- Ganas de dibujar 🎨
 
 ---
 
@@ -318,21 +320,21 @@ plt.show()
    - Esto crea automáticamente una escena optimizada para Grease Pencil.
    - Verás un lienzo blanco en lugar del típico cubo 3D.
 
-> ⚠️ Si ya tenías Blender abierto: *File → New → 2D Animation*.
+>  Si ya tenías Blender abierto: *File → New → 2D Animation*.
 
 ### 1.2 Configurar FPS y duración
 
-1. Panel derecho → ícono de *escena* 🎬 → sección *Frame Rate*.
+1. Panel derecho → ícono de *escena*  → sección *Frame Rate*.
 2. Selecciona 24 fps.
 3. Define el rango de frames:
    - *Start:* 1
-   - *End:* 96
+   - *End:* 25
    
-> 💡 Un ciclo de caminata básico usa *8 poses. A 12 fps de animación (en 24 fps), el ciclo completo dura **16 frames* = ~0.6 segundos. Repetiremos ese ciclo varias veces.
+>  Un ciclo de caminata básico usa *8 poses. A 3 fps de animación (en 24 fps), el ciclo completo dura **25 frames* = ~0.6 segundos. Repetiremos ese ciclo varias veces.
 
 ### 1.3 Configurar la resolución
 
-1. Panel derecho → ícono de *cámara* 📷 → *Format*.
+1. Panel derecho → ícono de *cámara* → *Format*.
 2. Resolución: 1920 x 1080 al 100%.
 
 ---
@@ -356,31 +358,25 @@ Grease Pencil es la herramienta de dibujo 2D dentro de Blender. Funciona como un
 
 1. En la barra superior izquierda del viewport, selecciona el modo *Draw* (lápiz).
 2. En la barra de herramientas izquierda verás los pinceles disponibles:
-   - *Ink* → trazo limpio y firme ✅ (recomendado para personajes)
+   - *Ink* → trazo limpio y firme (recomendado para personajes)
    - *Pencil* → trazo con textura
    - *Fill* → para rellenar áreas cerradas
 
 ### 2.4 Dibujar el personaje (pose de referencia)
 
-Para este tutorial usaremos un personaje simple tipo stick figure (figura de palitos) para enfocarnos en la animación.
+Para este tutorial usaremos un personaje de anime (Pochita).
 
 Dibuja las siguientes partes en capas separadas:
 
-| Parte | Capa sugerida |
-|---|---|
-| Cabeza (círculo) | Cabeza |
-| Torso (línea vertical) | Cuerpo |
-| Brazo izquierdo | Brazo_Izq |
-| Brazo derecho | Brazo_Der |
-| Pierna izquierda | Pierna_Izq |
-| Pierna derecha | Pierna_Der |
+![pochita referencia](https://github.com/user-attachments/assets/1d82a34e-0f90-40cf-8725-5525219207ab)
+
 
 *Cómo crear capas:*
 1. Panel derecho → ícono de *líneas verdes* (Grease Pencil Properties).
 2. Sección *Layers* → haz clic en + para agregar una capa.
 3. Renómbrala haciendo doble clic sobre el nombre.
 
-> 💡 Dibujar en capas separadas te permite mover cada parte del cuerpo de forma independiente, lo cual es clave para la animación.
+>  Dibujar en capas separadas te permite mover cada parte del cuerpo de forma independiente, lo cual es clave para la animación.
 
 ### 2.5 Dibujar cada parte
 
@@ -395,29 +391,6 @@ Dibuja las siguientes partes en capas separadas:
 
 La caminata se anima dibujando *poses clave* en fotogramas distintos. Blender NO interpola los dibujos automáticamente — cada pose debe dibujarse a mano.
 
-### Las 4 poses esenciales de una caminata
-
-
-Pose 1: Contacto       Pose 2: Bajada        Pose 3: Paso         Pose 4: Subida
-   O                      O                     O                     O
-   |                      |                     |                     |
-  /|\                    /|\                   /|\                   /|\
- / | \                  / | \                 / | \                 / | \
-Pie D  adelante      Pie D  abajo          Pie I  adelante      Pie I  arriba
-
-
-| Pose | Frame | Descripción |
-|---|---|---|
-| *Contacto derecho* | 1 | Pie derecho adelante tocando el suelo |
-| *Bajada* | 3 | Cuerpo en su punto más bajo |
-| *Paso* | 5 | Ambos pies juntos, cuerpo neutro |
-| *Subida* | 7 | Cuerpo en su punto más alto |
-| *Contacto izquierdo* | 9 | Pie izquierdo adelante (espejo de pose 1) |
-| *Bajada* | 11 | Igual que frame 3 pero espejado |
-| *Paso* | 13 | Igual que frame 5 |
-| *Subida* | 15 | Igual que frame 7 |
-| (Regresa a pose 1) | 17 | El ciclo se repite |
-
 ---
 
 ## 4. Crear las poses del ciclo de caminata
@@ -427,15 +400,11 @@ Pie D  adelante      Pie D  abajo          Pie I  adelante      Pie I  arriba
 1. Asegúrate de estar en *Draw Mode*.
 2. En la Timeline, activa el botón *Auto Keyframe* (ícono de rombo rojo 🔴 en la Timeline).
 
-### 4.2 Dibujar Pose 1 — Frame 1 (Contacto derecho)
+### 4.2 Dibujar Pose 1 — Frame 1 
 
 1. Ve al *Frame 1* en la Timeline.
 2. Selecciona la capa Pierna_Der.
-3. Dibuja la pierna derecha extendida hacia adelante.
-4. Selecciona la capa Pierna_Izq.
-5. Dibuja la pierna izquierda extendida hacia atrás.
-6. Dibuja los brazos en posición opuesta (brazo izquierdo adelante, derecho atrás).
-7. La cabeza y el torso se quedan en posición neutra.
+3. Dibuja la primera imagen de referencia de Pochita.
 
 *Guardar el keyframe de dibujo:*
 1. En la Timeline, presiona I estando sobre el área de Grease Pencil.
@@ -445,29 +414,26 @@ Pie D  adelante      Pie D  abajo          Pie I  adelante      Pie I  arriba
 
 Repite el mismo proceso para cada pose:
 
-*Frame 3 — Bajada:*
-- Las piernas se acercan, el cuerpo baja ligeramente.
-- Redibuja las piernas en esa posición.
+*Frame 4*
+- Dibuja la pose 2.
 - Presiona I → *All Layers*.
 
-*Frame 5 — Paso:*
-- Ambos pies casi juntos bajo el cuerpo.
-- El cuerpo está en altura neutra.
+*Frame 7*
+- Dibuja la pose 3.
 - Presiona I → *All Layers*.
 
-*Frame 7 — Subida:*
-- Una pierna empuja hacia arriba.
-- El cuerpo está en su punto más alto.
+*Frame 10*
+- Dibuja la pose 4.
 - Presiona I → *All Layers*.
 
-*Frame 9 — Contacto izquierdo:*
-- Espejo exacto del Frame 1 (pie izquierdo adelante ahora).
+*Frame 13*
+- Dibuja la pose 5.
 - Presiona I → *All Layers*.
 
-*Frames 11, 13, 15:*
-- Repite el mismo patrón espejado de los frames 3, 5 y 7.
+*Frames 6, 7, 8:*
+- Repite el mismo patrón espejado de los frames 4, 7 y 10.
 
-> 💡 Tip: Puedes usar Shift + clic en la Timeline para ver el dibujo del frame anterior como referencia fantasma (onion skinning).
+>  Tip: Puedes usar Shift + clic en la Timeline para ver el dibujo del frame anterior como referencia fantasma (onion skinning).
 
 ### 4.4 Activar Onion Skinning (piel de cebolla)
 
@@ -507,13 +473,6 @@ En Grease Pencil, los keyframes funcionan diferente al 3D. Cada frame con un dib
 3. Observa si las poses se ven fluidas.
 4. Pausa con *Spacebar* y ajusta los dibujos que no se vean bien.
 
-### Cosas a revisar
-
-- ✅ ¿El cuerpo sube y baja levemente con cada paso?
-- ✅ ¿Los brazos se mueven en dirección opuesta a las piernas?
-- ✅ ¿El ciclo se conecta sin saltos bruscos entre el frame 16 y el frame 1?
-- ✅ ¿La velocidad de la caminata se siente natural?
-
 ---
 
 ## 7. Agregar movimiento horizontal
@@ -533,33 +492,11 @@ Para que el personaje camine atravesando la pantalla (no solo en el mismo lugar)
 
 ### 7.3 Keyframe de posición final
 
-1. Ve al *Frame 96*.
+1. Ve al *Frame 25*.
 2. Mueve el personaje al lado derecho: G → X → 8 → Enter.
 3. Presiona I → *Location*.
 
 Ahora el personaje caminará de izquierda a derecha mientras el ciclo de caminata se repite.
-
----
-
-## 8. Exportar la animación
-
-### 8.1 Configurar salida
-
-1. Panel derecho → ícono de *impresora* 🖨️ (Output Properties).
-2. Define la carpeta de salida: /tmp/caminata_2d/
-3. *File Format:* FFmpeg Video
-
-### 8.2 Configurar FFmpeg
-
-- *Container:* MPEG-4
-- *Video Codec:* H.264
-- *Audio:* No Audio
-
-### 8.3 Renderizar
-
-1. Menú superior → *Render* → *Render Animation*
-2. Atajo: Ctrl + F12
-3. Blender renderizará cada frame y guardará el .mp4 en la carpeta definida.
 
 ---
 
