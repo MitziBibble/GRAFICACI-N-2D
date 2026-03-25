@@ -1,4 +1,5 @@
-<img width="1855" height="1308" alt="frame 2" src="https://github.com/user-attachments/assets/f2879122-a668-4284-8ffc-ab95339dece4" /><img width="717" height="748" alt="spline" src="https://github.com/user-attachments/assets/2b439ef5-6c80-43aa-9538-3b4977db20d0" /># GRAFICACI-N-2D
+# GRAFICACION-2D
+
 # Unidad 2: Graficación por Computadora
 
 ## 2.1. Transformación Bidimensional
@@ -440,7 +441,8 @@ Repite el mismo proceso para cada pose:
 - Dibuja la pose 5.
 - Presiona I → *All Layers*.
   
-<img width="1917" height="1216" alt="frame 5" src="https://github.com/user-attachments/assets/23671a4d-90ef-43c9-89ff-0845c28d6fd3" />
+<img width="1889" height="1242" alt="frame 5" src="https://github.com/user-attachments/assets/d80357bb-a53f-478f-8f63-1861103034d4" />
+
 
 *Frames 6, 7, 8:*
 - Repite el mismo patrón espejado de los frames 4, 7 y 10.
