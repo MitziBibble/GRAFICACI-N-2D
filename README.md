@@ -285,6 +285,23 @@ prop = fm.FontProperties(fname="mi_fuente.ttf")
 plt.title("Gráfica con fuente personalizada", fontproperties=prop)
 plt.show()
 ```
+### Referencias bibliográficas:
+
+Foley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (1990).
+    Computer graphics: Principles and practice (2nd ed.).
+    Addison-Wesley.
+
+Hearn, D., & Baker, M. P. (2004). Computer graphics with OpenGL
+    (3rd ed.). Pearson Prentice Hall.
+
+Mandelbrot, B. B. (1982). The fractal geometry of nature.
+    W. H. Freeman.
+
+Microsoft. (2023). OpenType specification. Microsoft Learn.
+    https://learn.microsoft.com/en-us/typography/opentype/spec/
+
+Adobe. (2023). OpenType user guide. Adobe Inc.
+    https://helpx.adobe.com/fonts/using/open-type-syntax.html
 # Tutorial: Animación 2D en Blender con Grease Pencil
 ### Personaje caminando paso a paso
 
