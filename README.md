@@ -103,6 +103,44 @@ Los elementos de la matriz general tienen el siguiente significado:
 | tx | Traslación en eje X |
 | ty | Traslación en eje Y |
 
+### Ejemplo de ejercicio de control con teclas de direccion en Blender
+
+<img width="910" height="384" alt="imagen mov 1" src="https://github.com/user-attachments/assets/20b27735-4e9f-4343-bd79-b57af3ff9a0d" />
+
+<img width="908" height="386" alt="imagen mov 2" src="https://github.com/user-attachments/assets/d084ca20-27c0-49c1-be16-f734bf60b098" />
+
+Código:
+
+Permite el movimiento por el eje "x" y "z".
+
+```python
+import bpy
+
+class SimpleMove(bpy.types.Operator):
+    bl_idname = "object.simple_move"
+    bl_label = "Mover Cualquier Cosa"
+
+    def modal(self, context, event):
+        # Toma el primer objeto de la lista de la escena
+        obj = bpy.data.objects[0] 
+
+        if event.value == 'PRESS':
+            if event.type == 'LEFT_ARROW':  obj.location.x -= 1
+            elif event.type == 'RIGHT_ARROW': obj.location.x += 1
+            elif event.type == 'UP_ARROW':    obj.location.z += 1
+            elif event.type == 'DOWN_ARROW':  obj.location.z -= 1
+            elif event.type == 'ESC': return {'FINISHED'}
+            
+        return {'RUNNING_MODAL'}
+
+    def invoke(self, context, event):
+        context.window_manager.modal_handler_add(self)
+        return {'RUNNING_MODAL'}
+
+bpy.utils.register_class(SimpleMove)
+bpy.ops.object.simple_move('INVOKE_DEFAULT')
+```
+
 ---
 
 ## 2.3. Trazo de Líneas Curvas
