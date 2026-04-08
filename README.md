@@ -204,6 +204,9 @@ Las B-Splines (Basis Splines) son una *generalización de las curvas de Bézier,
 | Suavidad | Alta | Alta (Cᵏ⁻²) |
 
 > Las B-Splines pueden evaluarse de forma numéricamente estable mediante el *algoritmo de De Boor*.
+### Animacion hecha con curvas Bézier en Blender
+
+https://github.com/user-attachments/assets/7eaa9436-3425-420a-a65e-74b0f336bcdf
 
 ---
 
